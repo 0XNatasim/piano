@@ -157,12 +157,27 @@ const SONG_LIBRARY = [
         id: "allofme",
         title: "All of Me (John Legend)",
         difficulty: "Medium",
-        tempo: 63,
+        tempo: 66,
         steps: notes(
-          ["C4", 1, "E4", 1, "F4", 1, "G4", 1],
-          ["A4", 1.5, "G4", 0.5, "F4", 1, "E4", 1],
-          ["D4", 1, "E4", 1, "F4", 1, "D4", 1],
-          ["C4", 4]
+          // 'Cause all of me / loves all of you
+          ["E4", 0.5, "G4", 0.5, "A4", 1, "G4", 1, "E4", 1.5],
+          ["E4", 0.5, "G4", 0.5, "A4", 1, "G4", 1, "E4", 1.5],
+          // Love your curves and all your edges
+          ["E4", 0.5, "E4", 0.5, "G4", 0.5, "G4", 0.5, "A4", 0.5, "A4", 0.5, "G4", 0.5, "E4", 0.5],
+          // All your perfect imperfections
+          ["F4", 0.5, "F4", 0.5, "A4", 0.5, "A4", 0.5, "G4", 0.5, "G4", 0.5, "E4", 1],
+          // Give your all to me
+          ["C4", 0.5, "D4", 0.5, "E4", 1, "E4", 0.5, "D4", 1.5],
+          // I'll give my all to you
+          ["C4", 0.5, "D4", 0.5, "E4", 1, "E4", 0.5, "D4", 0.5, "C4", 1],
+          // You're my end and my beginning
+          ["E4", 0.5, "E4", 0.5, "G4", 0.5, "G4", 0.5, "A4", 0.5, "A4", 0.5, "G4", 0.5, "E4", 0.5],
+          // Even when I lose I'm winning
+          ["E4", 0.5, "E4", 0.5, "G4", 0.5, "G4", 0.5, "A4", 0.5, "G4", 0.5, "E4", 0.5, "D4", 0.5],
+          // 'Cause I give you all of me
+          ["C4", 0.5, "C4", 0.5, "E4", 1, "G4", 1, "A4", 1, "G4", 1, "E4", 2],
+          // And you give me all of you, oh
+          ["C4", 0.5, "C4", 0.5, "E4", 1, "G4", 1, "F4", 1, "E4", 1, "D4", 1, "C4", 3]
         ),
       },
       {
@@ -171,9 +186,22 @@ const SONG_LIBRARY = [
         difficulty: "Easy",
         tempo: 95,
         steps: notes(
+          // It's a beautiful night
           ["G4", 0.5, "G4", 0.5, "A4", 0.5, "G4", 0.5, "E4", 1, "D4", 1],
+          // We're looking for something dumb to do
+          ["D4", 0.5, "E4", 0.5, "G4", 0.5, "G4", 0.5, "A4", 0.5, "G4", 0.5, "E4", 1, "D4", 1],
+          // Hey baby
+          ["E4", 1, "G4", 1],
+          // I think I wanna marry you
+          ["A4", 0.5, "A4", 0.5, "G4", 0.5, "E4", 0.5, "G4", 0.5, "E4", 0.5, "D4", 1, "C4", 2],
+          // Is it the look in your eyes
           ["G4", 0.5, "G4", 0.5, "A4", 0.5, "G4", 0.5, "E4", 1, "D4", 1],
-          ["C4", 1, "D4", 1, "E4", 1, "G4", 2]
+          // Or is it this dancing juice
+          ["D4", 0.5, "E4", 0.5, "G4", 0.5, "G4", 0.5, "A4", 0.5, "G4", 0.5, "E4", 1, "D4", 1],
+          // Who cares baby
+          ["E4", 1, "G4", 1],
+          // I think I wanna marry you
+          ["A4", 0.5, "A4", 0.5, "G4", 0.5, "E4", 0.5, "G4", 0.5, "E4", 0.5, "D4", 1, "C4", 3]
         ),
       },
       {
@@ -182,9 +210,24 @@ const SONG_LIBRARY = [
         difficulty: "Medium",
         tempo: 90,
         steps: notes(
-          ["E4", 0.5, "G4", 0.5, "A4", 1, "E4", 0.5, "G4", 0.5, "A4", 1],
-          ["E4", 0.5, "G4", 0.5, "A4", 1, "B4", 0.5, "A4", 0.5, "G4", 1],
-          ["E4", 0.5, "D4", 0.5, "C4", 1, "D4", 1, "E4", 2]
+          // Where are you now? / Where are you now?
+          ["A4", 0.5, "A4", 0.5, "G4", 1, "E4", 1.5],
+          ["A4", 0.5, "A4", 0.5, "G4", 1, "E4", 1.5],
+          // Under the bright but faded lights
+          ["A4", 0.5, "A4", 0.5, "A4", 0.5, "B4", 0.5, "C5", 1, "B4", 0.5, "A4", 0.5, "G4", 1],
+          // You set my heart on fire
+          ["E4", 0.5, "G4", 0.5, "A4", 1, "A4", 0.5, "G4", 0.5, "A4", 2],
+          // Where are you now? / Where are you now?
+          ["A4", 0.5, "A4", 0.5, "G4", 1, "E4", 1.5],
+          ["C5", 0.5, "B4", 0.5, "A4", 1, "G4", 1.5],
+          // Instrumental drop hook (Am - F - C - G)
+          ["A4", 0.5, "C5", 0.5, "B4", 0.5, "C5", 0.5, "A4", 0.5, "C5", 0.5, "B4", 0.5, "C5", 0.5],
+          ["F4", 0.5, "A4", 0.5, "G4", 0.5, "A4", 0.5, "F4", 0.5, "A4", 0.5, "G4", 0.5, "A4", 0.5],
+          ["E4", 0.5, "G4", 0.5, "F4", 0.5, "G4", 0.5, "E4", 0.5, "G4", 0.5, "F4", 0.5, "G4", 0.5],
+          ["G4", 0.5, "B4", 0.5, "A4", 0.5, "B4", 0.5, "G4", 1, "E4", 1],
+          // I'm faded...
+          ["E4", 0.5, "G4", 0.5, "A4", 2.5],
+          ["A4", 0.5, "G4", 0.5, "E4", 3]
         ),
       },
     ],
