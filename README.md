@@ -1,26 +1,26 @@
 # 🎹 Piano Lessons
 
-A lightweight, install-free web app for learning to play songs on a virtual
-piano — inspired by falling-tile piano trainers. Pick a **category**, choose a
-**song**, select your **note colors**, then play along on an on-screen keyboard.
+A lightweight, install-free follow-along tool for playing songs on a **real,
+physical piano** — falling note-bars scroll down a Guitar Hero-style highway
+toward a keyboard reference, lighting up the exact key to play the instant
+each note should sound. Pick a **category**, choose a **song**, and follow along.
 
 ## Features
 
 - **Category selection** — Beginner Basics, Classical, Holiday, Pop & Fun.
 - **Song selection** — each song shows its difficulty, note count and tempo.
-- **Color selection** — six note-tile themes (Sunset, Ocean, Grape, Mint,
-  Candy, Rainbow) that recolor the falling tiles and the glowing keys.
-- **Two ways to learn**
-  - **Play** ▶ — the song plays itself, highlighting each key in time.
-  - **Practice** 🎯 — the next key glows and waits for you to press it before
-    advancing, so you set your own pace.
-- **Upcoming-note tiles** — the next notes appear as colored cards on the right,
-  matching the piano-trainer style.
-- **Playable keyboard** — two octaves (C4–C6). Tap/click keys, or use your
-  computer keyboard (`A S D F G H J K L` = white keys, `Space` = play/pause).
-- **Tempo & volume** controls, plus a progress bar.
-- **No build step, no dependencies, no audio files** — the piano is synthesized
-  live with the Web Audio API.
+- **Falling notes** — notes scroll down the screen in real time and land on a
+  glowing hit line, sized by duration and positioned by pitch, just like a
+  Guitar Hero / Synthesia highway.
+- **Passive keyboard reference** — a keyboard strip at the bottom lights up
+  each key as its note arrives. It's a visual guide only — nothing on screen
+  is clickable to make sound, since you're meant to play on your own piano.
+- **Speed & volume** controls (speed can be changed live, mid-song) plus a
+  progress bar.
+- **No build step, no dependencies, no audio files** — the piano is
+  synthesized live with the Web Audio API (harmonic oscillator bank, a
+  brightness-decay filter envelope, and a touch of reverb) so there's a
+  reference tone to follow without needing sample libraries.
 
 ## Run it
 
@@ -35,10 +35,10 @@ python3 -m http.server 8000
 
 ```
 index.html        # markup + script/style includes
-css/styles.css    # all styling (dark theme, keyboard, tiles)
+css/styles.css    # all styling (dark theme, falling-notes highway, keyboard reference)
 js/songs.js       # song library + note-sequence data
 js/audio.js       # Web Audio piano synthesizer
-js/app.js         # screen flow, keyboard, playback engine
+js/app.js         # screen flow, falling-notes engine, keyboard-reference layout
 ```
 
 ## Adding a song
