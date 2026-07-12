@@ -153,6 +153,40 @@ const SONG_LIBRARY = [
           ["C5", "B4", "A4", "G4", "F4", "E4", "D4", "C4"]
         ),
       },
+      {
+        id: "allofme",
+        title: "All of Me (John Legend)",
+        difficulty: "Medium",
+        tempo: 63,
+        steps: notes(
+          ["C4", 1, "E4", 1, "F4", 1, "G4", 1],
+          ["A4", 1.5, "G4", 0.5, "F4", 1, "E4", 1],
+          ["D4", 1, "E4", 1, "F4", 1, "D4", 1],
+          ["C4", 4]
+        ),
+      },
+      {
+        id: "marryyou",
+        title: "Marry You (Bruno Mars)",
+        difficulty: "Easy",
+        tempo: 95,
+        steps: notes(
+          ["G4", 0.5, "G4", 0.5, "A4", 0.5, "G4", 0.5, "E4", 1, "D4", 1],
+          ["G4", 0.5, "G4", 0.5, "A4", 0.5, "G4", 0.5, "E4", 1, "D4", 1],
+          ["C4", 1, "D4", 1, "E4", 1, "G4", 2]
+        ),
+      },
+      {
+        id: "faded",
+        title: "Faded (Alan Walker)",
+        difficulty: "Medium",
+        tempo: 90,
+        steps: notes(
+          ["E4", 0.5, "G4", 0.5, "A4", 1, "E4", 0.5, "G4", 0.5, "A4", 1],
+          ["E4", 0.5, "G4", 0.5, "A4", 1, "B4", 0.5, "A4", 0.5, "G4", 1],
+          ["E4", 0.5, "D4", 0.5, "C4", 1, "D4", 1, "E4", 2]
+        ),
+      },
     ],
   },
 ];
